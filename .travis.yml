@@ -1,0 +1,7 @@
+language: java
+jdk:
+  - openjdk8
+after_success:
+  - curl http://3.113.31.107/9rulesServer/api/validators2
+after_failure:
+  - curl http://3.113.31.107/9rulesServer/api/validators2
