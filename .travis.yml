@@ -2,6 +2,6 @@ language: java
 jdk:
   - openjdk8
 after_success:
-  - curl -X POST http://localhost:8080/cltgit/webapi/validators/miyazakisoft/Putu?branch=master"&"target=""
+  - curl -X POST http://3.113.31.107/cltgit/webapi/validators/miyazakisoft/Putu?branch=master"&"target=""
 after_failure:
-  - curl -X POST http://localhost:8080/cltgit/webapi/validators/miyazakisoft/Putu?branch=master"&"target=""
+  - curl -X POST http://3.113.31.107/cltgit/webapi/validators/miyazakisoft/Putu?branch=master"&"target=""
