@@ -1,4 +1,4 @@
-public class Sample2{
+public class Sample{
 
   Integer number;
 
