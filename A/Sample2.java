@@ -1,13 +1,8 @@
 public class Sample2{
 
-  Integer number;
-
-  public void setNumber(Integer aNumber){
-    this.number = aNumber;
+  int number1,number2;
+  List list = new ArrayList();
+  public static void main(String[]args){
+    System.out.println(list.get("aa").toString());
   }
-
-  public Integer getNumber(){
-    return this.number;
-  }
-
 }
