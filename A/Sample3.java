@@ -12,7 +12,7 @@ import com.github.ninerules.rules.results.Results;
 import com.github.ninerules.traverser.ExtensionFilter;
 import com.github.ninerules.traverser.Traverser;
 
-public class Main{
+public class Sample2{
     public Main(String[] args, PrintWriter out){
         CommandLines commandline = new CommandLines(args);
         performUnlessHelp(commandline, out);
@@ -43,7 +43,7 @@ public class Main{
 
     public static void main(String[] args){
         try(PrintWriter out = new PrintWriter(System.out)){
-            new Main(args, out);
+            new Sample2(args, out);
         }
     }
 }
