@@ -5,6 +5,7 @@ public class Sample2{
   Integer nini;
   private List coins;
   int a;
+  int b;
 
   public static void main(String[]args){
     Sample sample = new Sample();
