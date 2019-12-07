@@ -8,3 +8,4 @@ jobs:
      # プライベート Docker イメージによる専用 DB を稼働させる
      - run: |
          docker run --rm -v "$PWD":/home/ninerules tamada/9rules:latest A
+         ls
