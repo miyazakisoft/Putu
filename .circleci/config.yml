@@ -4,5 +4,4 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run: |
-        docker run --rm -v "$PWD":/home/ninerules tamada/9rules:latest A
+      - run: docker run --rm -v "$PWD":/home/ninerules tamada/9rules:latest A
