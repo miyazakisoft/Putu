@@ -1,0 +1,5 @@
+A/DataOutputStreamExample.java
+line: 5, indentation level is too much (more than 1 indent level).
+line: 33, many dots per line (more than 1 dots).
+line: 5, method is too long (over 3 lines).
+A/Sample3.java
