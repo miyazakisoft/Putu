@@ -1,7 +1,17 @@
 version: 2
 jobs:
-  build:
-    steps:
-      - checkout
-      - setup_remote_docker
-      - run: ls
+ build:
+   machine: true
+   steps:
+     - checkout
+     # UI に保管されている ID・パスワードを使い
+     # プライベート Docker イメージによる専用 DB を稼働させる
+     - run: |
+         docker login -u $DOCKER_USER -p $DOCKER_PASS
+         docker run -d --name db company/proprietary-db:1.2.3
+
+     # アプリケーションイメージをビルド
+     - run: docker build -t company/app:$CIRCLE_BRANCH .
+
+     # イメージのデプロイ
+     - run: docker push company/app:$CIRCLE_BRANCH
