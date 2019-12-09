@@ -7,6 +7,6 @@ jobs:
      # UI に保管されている ID・パスワードを使い
      # プライベート Docker イメージによる専用 DB を稼働させる
      - run: |
-         ls -a
-         # sh exec.sh
+         #ls -a
+         sh exec.sh
          # docker run --rm -v "$PWD":/home/ninerules tamada/9rules:latest A
