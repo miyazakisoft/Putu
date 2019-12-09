@@ -1,5 +1,12 @@
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 docker run --rm -v "$PWD":/home/ninerules tamada/9rules:latest A > result.txt
-#echo $SCRIPT_DIR/sample_project/$1
-#echo test
-#docker run --rm -v "$PWD":/home/ninerules tamada/9rules:latest example
+
+#num=$(grep line result.txt | wc -l)
+
+#if [ $num -eq 0 ]; then
+#  exit 0
+#else
+#  exit 1
+#fi
+
+#exit 0
